@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\BabCrm.Core\BabCrm.Core.csproj" />
+    <ProjectReference Include="..\..\..\Common\BabCrm.Logging\BabCrm.Logging.csproj" />
+    <ProjectReference Include="..\..\..\Common\BabCrm.Mapping\BabCrm.Mapping.csproj" />
+    <ProjectReference Include="..\Bab.BatchData\Bab.BatchData.csproj" />
+  </ItemGroup>
+
+</Project>

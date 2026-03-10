@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="6.4.1" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="6.4.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Hangfire" Version="1.7.33" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.33" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\BabCrm.Crm\BabCrm.Crm.csproj" />
+    <ProjectReference Include="..\..\Common\BabCrm.Mapping\BabCrm.Mapping.csproj" />
+    <ProjectReference Include="..\Attachments\Bab.Attachments.Api\Bab.Attachments.Api.csproj" />
+    <ProjectReference Include="..\BatchData\Bab.BatchData.Api\Bab.BatchData.Api.csproj" />
+    <ProjectReference Include="..\BatchData\Bab.BatchData.Sql\Bab.BatchData.Sql.csproj" />
+    <ProjectReference Include="..\Jobs\Bab.Jobs.Api\Bab.Jobs.Api.csproj" />
+    <ProjectReference Include="..\Jobs\Bab.Jobs.Crm\Bab.Jobs.Crm.csproj" />
+    <ProjectReference Include="..\Service\BabCrm.Service.Crm\BabCrm.Service.Crm.csproj" />
+    <ProjectReference Include="..\Service\BabCrm.Service.Sql\BabCrm.Service.Sql.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

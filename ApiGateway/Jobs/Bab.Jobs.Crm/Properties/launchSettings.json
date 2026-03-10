@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Bab.Jobs.Crm": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:54158;http://localhost:54159"
+    }
+  }
+}
